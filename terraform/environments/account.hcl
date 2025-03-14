@@ -14,4 +14,6 @@ locals {
     bucket     = "harmony"
     region     = "ru-central1"
   }
+
+  k8s_service_account_id = "ajem53hmt5rh08bbllh8"
 }
