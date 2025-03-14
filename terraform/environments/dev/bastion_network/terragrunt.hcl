@@ -10,13 +10,13 @@ terraform {
 inputs = {
 
   name = {
-    network     = "${include.root.inputs.environment}bastion-public-network"
-    sg          = "${include.root.inputs.environment}bastion-public-sg"
-    subnet      = "${include.root.inputs.environment}bastion-public-subnet"
+    network = "${include.root.inputs.environment}-bastion-public-network"
+    sg      = "${include.root.inputs.environment}-bastion-public-sg"
+    subnet  = "${include.root.inputs.environment}-bastion-public-subnet"
   }
 
   sg_description = "allow incoming ssh/22"
 
-  zone                = include.root.inputs.yandex_provider.zone
-  subnet_cidr         = include.root.inputs.subnets.external_sub_cidr
+  zone        = include.root.inputs.yandex_provider.zone
+  subnet_cidr = include.root.inputs.subnets.external_sub_cidr
 }

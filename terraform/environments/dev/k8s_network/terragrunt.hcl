@@ -10,11 +10,11 @@ terraform {
 inputs = {
 
   name = {
-    network     = "${include.root.inputs.environment}k8s-private-network"
-    sg          = "${include.root.inputs.environment}k8s-private-sg"
-    subnet      = "${include.root.inputs.environment}k8s-private-subnet"
-    gateway     = "${include.root.inputs.environment}k8s-private-gateway"
-    route_table = "${include.root.inputs.environment}k8s-private-route-table"
+    network     = "${include.root.inputs.environment}-k8s-private-network"
+    sg          = "${include.root.inputs.environment}-k8s-private-sg"
+    subnet      = "${include.root.inputs.environment}-k8s-private-subnet"
+    gateway     = "${include.root.inputs.environment}-k8s-private-gateway"
+    route_table = "${include.root.inputs.environment}-k8s-private-route-table"
   }
 
   sg_description = "custom security group"

@@ -1,9 +1,9 @@
 
 variable "name" {
   type = object({
-    network     = string
-    sg          = string
-    subnet      = string
+    network = string
+    sg      = string
+    subnet  = string
   })
   description = "object names"
 }
